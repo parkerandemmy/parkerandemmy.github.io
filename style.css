@@ -1,0 +1,84 @@
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family: "Inter", sans-serif;
+    color:#375744;
+    background:#faf8f4;
+
+}
+
+/* Hero */
+
+.hero{
+
+    position:relative;
+
+    height:100vh;
+
+    background-image:url("images/hero.jpg");
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+}
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.18);
+
+}
+
+.hero-text{
+
+    position:relative;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+.hero-text h1{
+
+    font-family:"Cormorant Garamond", serif;
+
+    font-size:5.8rem;
+
+    font-weight:500;
+
+    letter-spacing:2px;
+
+}
+
+.hero-text span{
+
+    color:#b59b81;
+
+}
+
+.hero-text p{
+
+    margin-top:20px;
+
+    font-size:1.4rem;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+}
