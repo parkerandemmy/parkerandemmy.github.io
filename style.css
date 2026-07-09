@@ -25,6 +25,8 @@ nav {
 
     background: #fbf9f5;
 
+    border-bottom:none;
+
     z-index: 1000;
 
 }
