@@ -129,24 +129,25 @@ align-items:center;
 gap:50px;
 
 }
-
 .flower{
 
-width:120px;
+    width:120px;
 
-opacity:.85;
-    
+    opacity:.85;
+
+}
+
 .flower.left{
-    transform: scaleX(1);
+
+    transform:scaleX(1);
+
 }
 
 .flower.right{
-    transform: scaleX(-1);
+
+    transform:scaleX(-1);
+
 }
-
-
-}
-
 
 .name-block h2{
 
