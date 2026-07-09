@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -10,65 +11,197 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
-
     margin:0;
-
-    background:#faf8f4;
-
-    text-align:center;
-
+    background:#fbf9f5;
     color:#375744;
+    font-family:"Inter",sans-serif;
+}
 
-    font-family:Arial,sans-serif;
+/* ---------- Navigation ---------- */
+
+nav{
+
+    position:sticky;
+    top:0;
+
+    background:rgba(251,249,245,.96);
+
+    backdrop-filter:blur(8px);
+
+    display:flex;
+    justify-content:center;
+    gap:40px;
+
+    padding:18px;
+
+    border-bottom:1px solid #e8dfd5;
+
+    z-index:1000;
 
 }
+
+nav a{
+
+    text-decoration:none;
+    color:#375744;
+    font-family:"Cormorant Garamond",serif;
+    font-size:1.4rem;
+
+    transition:.2s;
+
+}
+
+nav a:hover{
+
+    color:#b59b81;
+
+}
+
+/* ---------- Header ---------- */
 
 .container{
 
     max-width:900px;
-
     margin:auto;
-
-    padding:20px 30px;
+    padding:20px 30px 20px 30px;
+    text-align:center;
 
 }
 
 h1{
 
-    font-family:"Cormorant Garamond", serif;
-
-    font-size:72px;
-
+    font-family:"Cormorant Garamond",serif;
+    font-size:84px;
     font-weight:500;
+    color:#375744;
 
-    margin-bottom:4px;
+    margin-bottom:5px;
+    line-height:1.1;
 
 }
 
 .date{
 
+    font-family:"Cormorant Garamond",serif;
     color:#b59b81;
 
-    letter-spacing:3px;
-
-    text-transform:uppercase;
+    font-size:1.4rem;
 
     margin-bottom:20px;
 
 }
 
+/* ---------- Hero ---------- */
+
 .hero{
 
     width:100%;
+    display:block;
+
+}
+
+/* ---------- Intro ---------- */
+
+.intro{
+
+    text-align:center;
+    padding:80px 20px 60px;
+
+}
+
+.intro h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    color:#375744;
+
+    font-size:3rem;
+    font-weight:500;
+
+    margin:0;
+
+}
+
+.venue{
+
+    font-family:"Cormorant Garamond",serif;
+
+    color:#b59b81;
+
+    font-size:1.5rem;
+
+    line-height:1.8;
+
+    margin-top:25px;
+
+}
+
+/* ---------- Second Photo ---------- */
+
+.photo-section{
+
+    display:flex;
+    justify-content:center;
+
+    padding:20px;
+
+}
+
+.secondary-photo{
+
+    width:100%;
+    max-width:900px;
 
     height:auto;
 
-    display:block;
+}
+
+/* ---------- Sections ---------- */
+
+section{
+
+    max-width:900px;
+
+    margin:auto;
+
+    padding:80px 40px;
+
+}
+
+section h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    color:#375744;
+
+    font-size:3rem;
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+    font-weight:500;
+
+}
+
+section p{
+
+    color:#b59b81;
+
+    font-size:1.1rem;
+
+    line-height:1.8;
+
+    text-align:center;
 
 }
 
@@ -78,17 +211,126 @@ h1{
 
 <body>
 
+<nav>
+
+<a href="#story">Our Story</a>
+<a href="#details">Details</a>
+<a href="#travel">Travel</a>
+<a href="#gallery">Gallery</a>
+<a href="#registry">Registry</a>
+<a href="#faq">FAQ</a>
+
+</nav>
+
 <div class="container">
 
 <h1>Parker &amp; Emmy</h1>
 
 <div class="date">
+September 18, 2027
+</div>
+
+</div>
+
+<img src="images/hero.jpg" class="hero">
+
+<section class="intro">
+
+<h2>
+
+Parker S. White &amp; Emmy B. Hughes
+
+</h2>
+
+<p class="venue">
+
+Kamp Kohut
+<br>
+Oxford, Maine
+<br>
 September 4, 2027
-</div>
+
+</p>
+
+</section>
+
+<div class="photo-section">
+
+<img src="images/second-image.JPG" class="secondary-photo">
 
 </div>
 
-<img src="hero.jpg" class="hero">
+<section id="story">
+
+<h2>Our Story</h2>
+
+<p>
+
+Placeholder text for our story. We'll write something wonderful here later.
+
+</p>
+
+</section>
+
+<section id="details">
+
+<h2>Weekend Details</h2>
+
+<p>
+
+Placeholder information for ceremony, reception, and the weekend schedule.
+
+</p>
+
+</section>
+
+<section id="travel">
+
+<h2>Travel &amp; Lodging</h2>
+
+<p>
+
+Placeholder information about airports, hotels, transportation, and things to do nearby.
+
+</p>
+
+</section>
+
+<section id="gallery">
+
+<h2>Gallery</h2>
+
+<p>
+
+A gallery of our favorite memories together will go here.
+
+</p>
+
+</section>
+
+<section id="registry">
+
+<h2>Registry</h2>
+
+<p>
+
+Placeholder registry information.
+
+</p>
+
+</section>
+
+<section id="faq">
+
+<h2>Frequently Asked Questions</h2>
+
+<p>
+
+Placeholder FAQs.
+
+</p>
+
+</section>
 
 </body>
 
