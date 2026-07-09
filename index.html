@@ -13,199 +13,7 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
-<style>
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    margin:0;
-    background:#fbf9f5;
-    color:#375744;
-    font-family:"Inter",sans-serif;
-}
-
-/* ---------- Navigation ---------- */
-
-nav{
-
-    position:sticky;
-    top:0;
-
-    background:rgba(251,249,245,.96);
-
-    backdrop-filter:blur(8px);
-
-    display:flex;
-    justify-content:center;
-    gap:40px;
-
-    padding:18px;
-
-    border-bottom:1px solid #e8dfd5;
-
-    z-index:1000;
-
-}
-
-nav a{
-
-    text-decoration:none;
-    color:#375744;
-    font-family:"Cormorant Garamond",serif;
-    font-size:1.4rem;
-
-    transition:.2s;
-
-}
-
-nav a:hover{
-
-    color:#b59b81;
-
-}
-
-/* ---------- Header ---------- */
-
-.container{
-
-    max-width:900px;
-    margin:auto;
-    padding:20px 30px 20px 30px;
-    text-align:center;
-
-}
-
-h1{
-
-    font-family:"Cormorant Garamond",serif;
-    font-size:84px;
-    font-weight:500;
-    color:#375744;
-
-    margin-bottom:5px;
-    line-height:1.1;
-
-}
-
-.date{
-
-    font-family:"Cormorant Garamond",serif;
-    color:#b59b81;
-
-    font-size:1.4rem;
-
-    margin-bottom:20px;
-
-}
-
-/* ---------- Hero ---------- */
-
-.hero{
-
-    width:100%;
-    display:block;
-
-}
-
-/* ---------- Intro ---------- */
-
-.intro{
-
-    text-align:center;
-    padding:80px 20px 60px;
-
-}
-
-.intro h2{
-
-    font-family:"Cormorant Garamond",serif;
-
-    color:#375744;
-
-    font-size:3rem;
-    font-weight:500;
-
-    margin:0;
-
-}
-
-.venue{
-
-    font-family:"Cormorant Garamond",serif;
-
-    color:#b59b81;
-
-    font-size:1.5rem;
-
-    line-height:1.8;
-
-    margin-top:25px;
-
-}
-
-/* ---------- Second Photo ---------- */
-
-.photo-section{
-
-    display:flex;
-    justify-content:center;
-
-    padding:20px;
-
-}
-
-.secondary-photo{
-
-    width:100%;
-    max-width:900px;
-
-    height:auto;
-
-}
-
-/* ---------- Sections ---------- */
-
-section{
-
-    max-width:900px;
-
-    margin:auto;
-
-    padding:80px 40px;
-
-}
-
-section h2{
-
-    font-family:"Cormorant Garamond",serif;
-
-    color:#375744;
-
-    font-size:3rem;
-
-    text-align:center;
-
-    margin-bottom:25px;
-
-    font-weight:500;
-
-}
-
-section p{
-
-    color:#b59b81;
-
-    font-size:1.1rem;
-
-    line-height:1.8;
-
-    text-align:center;
-
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -213,7 +21,6 @@ section p{
 
 <nav>
 
-<a href="#story">Our Story</a>
 <a href="#details">Details</a>
 <a href="#travel">Travel</a>
 <a href="#gallery">Gallery</a>
@@ -222,79 +29,75 @@ section p{
 
 </nav>
 
-<div class="container">
+<header>
+
+<div class="title">
 
 <h1>Parker &amp; Emmy</h1>
 
-<div class="date">
+<p class="date">
 September 4, 2027
-</div>
+</p>
 
 </div>
 
 <img src="hero.jpg" class="hero">
 
-<section class="intro">
+</header>
+
+<section id="details" class="intro">
+
+<div class="name-block">
+
+<img src="flower.svg" class="flower left">
+
+<div>
 
 <h2>
 
 Emmy B. Hughes
-<br>
-<span style="color:#b59b81;">&amp;</span>
-<br>
+
+<span>&amp;</span>
+
 Parker S. White
 
 </h2>
 
-<p class="venue">
+<p>
 
 Kamp Kohut
+
 <br>
+
 Oxford, Maine
+
 <br>
+
 September 4, 2027
 
 </p>
 
-</section>
+</div>
 
-<div class="photo-section">
-
-<img src="second-image.JPG" class="secondary-photo">
+<img src="flower.svg" class="flower right">
 
 </div>
 
-<section id="story">
-
-<h2>Our Story</h2>
-
-<p>
-
-Placeholder text for our story. We'll write something wonderful here later.
-
-</p>
-
 </section>
 
-<section id="details">
+<section class="photo">
 
-<h2>Weekend Details</h2>
-
-<p>
-
-Placeholder information for ceremony, reception, and the weekend schedule.
-
-</p>
+<img src="second-image.JPG" class="secondary-photo">
 
 </section>
 
 <section id="travel">
 
-<h2>Travel &amp; Lodging</h2>
+<h2>Travel</h2>
 
 <p>
 
-Placeholder information about airports, hotels, transportation, and things to do nearby.
+Placeholder text.
 
 </p>
 
@@ -306,7 +109,7 @@ Placeholder information about airports, hotels, transportation, and things to do
 
 <p>
 
-A gallery of our favorite memories together will go here.
+Placeholder text.
 
 </p>
 
@@ -318,7 +121,7 @@ A gallery of our favorite memories together will go here.
 
 <p>
 
-Placeholder registry information.
+Placeholder text.
 
 </p>
 
@@ -330,7 +133,7 @@ Placeholder registry information.
 
 <p>
 
-Placeholder FAQs.
+Placeholder text.
 
 </p>
 
