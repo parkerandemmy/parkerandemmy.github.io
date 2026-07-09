@@ -364,3 +364,11 @@ section p {
     }
 
 }
+
+h2 {
+    border-bottom: none !important;
+}
+
+h2::after {
+    display:none !important;
+}
