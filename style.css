@@ -340,13 +340,28 @@ color:#375744;
 transition:.25s;
 
 }
+.rsvp-button{
 
-.rsvp-button:hover{
+display:block;
 
-background:#375744;
+width:fit-content;
 
-color:white;
+margin:30px auto 0 auto;
 
-border-color:#375744;
+padding:14px 36px;
+
+border:2px solid #375744;
+
+border-radius:40px;
+
+text-decoration:none;
+
+font-family:"Cormorant Garamond",serif;
+
+font-size:1.4rem;
+
+color:#375744;
+
+transition:.25s;
 
 }
