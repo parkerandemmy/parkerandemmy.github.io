@@ -1,84 +1,305 @@
-/* Reset */
+html{
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+scroll-behavior:smooth;
+
 }
 
 body{
 
-    font-family: "Inter", sans-serif;
-    color:#375744;
-    background:#faf8f4;
+margin:0;
+
+background:#fbf9f5;
+
+font-family:"Inter",sans-serif;
+
+color:#375744;
 
 }
 
-/* Hero */
+/* ---------- Navigation ---------- */
+
+nav{
+
+position:sticky;
+
+top:0;
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+gap:24px;
+
+padding:18px;
+
+background:rgba(251,249,245,.96);
+
+backdrop-filter:blur(8px);
+
+border-bottom:1px solid #e6ddd3;
+
+z-index:1000;
+
+}
+
+nav a{
+
+text-decoration:none;
+
+font-family:"Cormorant Garamond",serif;
+
+font-size:1.4rem;
+
+color:#375744;
+
+transition:.25s;
+
+}
+
+nav a:hover{
+
+color:#6895CC;
+
+}
+
+/* ---------- Header ---------- */
+
+.title{
+
+text-align:center;
+
+padding:20px 20px 15px;
+
+}
+
+h1{
+
+font-family:"Cormorant Garamond",serif;
+
+font-size:84px;
+
+font-weight:500;
+
+margin:0;
+
+color:#375744;
+
+}
+
+.date{
+
+font-family:"Cormorant Garamond",serif;
+
+font-size:1.4rem;
+
+color:#b59b81;
+
+margin-top:10px;
+
+margin-bottom:0;
+
+}
 
 .hero{
 
-    position:relative;
+width:100%;
 
-    height:100vh;
-
-    background-image:url("images/hero.jpg");
-    background-size:cover;
-    background-position:center;
-
-    display:flex;
-
-    justify-content:center;
-    align-items:center;
+display:block;
 
 }
 
-.overlay{
+/* ---------- Intro ---------- */
 
-    position:absolute;
+.intro{
 
-    inset:0;
-
-    background:rgba(0,0,0,.18);
+padding:80px 30px;
 
 }
 
-.hero-text{
+.name-block{
 
-    position:relative;
+display:flex;
 
-    text-align:center;
+justify-content:center;
 
-    color:white;
+align-items:center;
 
-}
-
-.hero-text h1{
-
-    font-family:"Cormorant Garamond", serif;
-
-    font-size:5.8rem;
-
-    font-weight:500;
-
-    letter-spacing:2px;
+gap:50px;
 
 }
 
-.hero-text span{
+.flower{
 
-    color:#b59b81;
+width:120px;
+
+opacity:.85;
 
 }
 
-.hero-text p{
+.name-block h2{
 
-    margin-top:20px;
+font-family:"Cormorant Garamond",serif;
 
-    font-size:1.4rem;
+font-size:3rem;
 
-    letter-spacing:4px;
+font-weight:500;
 
-    text-transform:uppercase;
+color:#375744;
+
+line-height:1.2;
+
+text-align:center;
+
+margin:0;
+
+}
+
+.name-block span{
+
+display:block;
+
+color:#b59b81;
+
+font-size:2.6rem;
+
+margin:10px 0;
+
+}
+
+.name-block p{
+
+font-family:"Cormorant Garamond",serif;
+
+font-size:1.45rem;
+
+color:#b59b81;
+
+line-height:1.8;
+
+text-align:center;
+
+}
+
+/* ---------- Second Image ---------- */
+
+.photo{
+
+display:flex;
+
+justify-content:center;
+
+padding:0 20px 70px;
+
+}
+
+.secondary-photo{
+
+width:100%;
+
+max-width:900px;
+
+display:block;
+
+}
+
+/* ---------- Sections ---------- */
+
+section{
+
+max-width:900px;
+
+margin:auto;
+
+padding:70px 40px;
+
+}
+
+section h2{
+
+font-family:"Cormorant Garamond",serif;
+
+font-size:3rem;
+
+font-weight:500;
+
+color:#375744;
+
+text-align:center;
+
+margin-bottom:20px;
+
+transition:.25s;
+
+}
+
+section h2:hover{
+
+color:#6895CC;
+
+}
+
+section p{
+
+font-size:1.1rem;
+
+line-height:1.8;
+
+color:#b59b81;
+
+text-align:center;
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width:800px){
+
+h1{
+
+font-size:56px;
+
+}
+
+.name-block{
+
+flex-direction:column;
+
+gap:25px;
+
+}
+
+.flower{
+
+width:80px;
+
+}
+
+.name-block h2{
+
+font-size:2.3rem;
+
+}
+
+nav{
+
+gap:15px;
+
+padding:15px;
+
+}
+
+nav a{
+
+font-size:1.2rem;
+
+}
+
+section{
+
+padding:50px 25px;
+
+}
 
 }
