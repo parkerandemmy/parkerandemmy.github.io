@@ -276,6 +276,14 @@ width:80px;
 
 }
 
+.flower.left{
+    transform: scaleX(1);
+}
+
+.flower.right{
+    transform: scaleX(-1);
+}
+
 .name-block h2{
 
 font-size:2.3rem;
