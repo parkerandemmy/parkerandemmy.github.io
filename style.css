@@ -364,3 +364,17 @@ section p {
     }
 
 }
+
+.section-icon {
+
+    display: block;
+
+    width: 48px;
+
+    height: auto;
+
+    margin: 0 auto 18px auto;
+
+    opacity: 0.9;
+
+}
