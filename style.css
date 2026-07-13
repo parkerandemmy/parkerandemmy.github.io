@@ -492,3 +492,16 @@ section p {
   padding: 8px;
 }
 
+section p {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 1.4rem;
+
+    line-height: 1.8;
+
+    color: #b59b81;
+
+    text-align: center;
+
+}
