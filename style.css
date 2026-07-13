@@ -429,9 +429,24 @@ section p {
 
 /* Stack to 2 columns on mobile */
 @media (max-width: 640px) {
-  .gallery {
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 90px;
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    gap: 14px;
+  }
+
+  .gallery-item.landscape,
+  .gallery-item.portrait {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .gallery-item.landscape {
+    aspect-ratio: 3 / 2;
+  }
+
+  .gallery-item.portrait {
+    aspect-ratio: 2 / 3;
   }
 }
 
