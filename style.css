@@ -271,7 +271,7 @@ section p {
 
     font-size: 1.4rem;
 
-    line-height: 1.8;
+    /* ----- line-height: 1.8; -----*/
 
     color: #b59b81;
 
