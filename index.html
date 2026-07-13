@@ -138,16 +138,32 @@ Placeholder text.
 </section>
 
 <section id="gallery">
+  <img src="Gallery.svg" alt="" class="section-icon">
+  <h2>Gallery</h2>
+  <p>
+    Placeholder text.
+  </p>
 
-<img src="Gallery.svg" alt="" class="section-icon">
+  <div class="gallery-grid">
+    <div class="gallery-item landscape"><img src="img-1.jpg" alt="Wedding photo 1"></div>
+    <div class="gallery-item landscape"><img src="img-2.jpg" alt="Wedding photo 2"></div>
+    <div class="gallery-item landscape"><img src="img-3.jpg" alt="Wedding photo 3"></div>
+    <div class="gallery-item portrait"><img src="img-4.jpg" alt="Wedding photo 4"></div>
+    <div class="gallery-item portrait"><img src="img-5.jpg" alt="Wedding photo 5"></div>
+    <div class="gallery-item portrait"><img src="img-6.jpg" alt="Wedding photo 6"></div>
+    <div class="gallery-item landscape"><img src="img-7.jpg" alt="Wedding photo 7"></div>
+    <div class="gallery-item landscape"><img src="img-8.jpg" alt="Wedding photo 8"></div>
+    <div class="gallery-item portrait"><img src="img-9.jpg" alt="Wedding photo 9"></div>
+    <div class="gallery-item portrait"><img src="img-10.jpg" alt="Wedding photo 10"></div>
+    <div class="gallery-item landscape"><img src="img-11.jpg" alt="Wedding photo 11"></div>
+  </div>
+</section>
 
-<h2>Gallery</h2>
-
-<p>
-
-Placeholder text.
-
-</p>
+<!-- Lightbox overlay -- keep this once, outside all sections, e.g. right before </body> -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
 
 </section>
 
@@ -200,6 +216,34 @@ Coming Soon
 </a>
 
 </section>
+
+<script>
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightboxImg');
+  const closeBtn = document.getElementById('lightboxClose');
+
+  document.querySelectorAll('.gallery-item').forEach(item => {
+    item.addEventListener('click', () => {
+      const img = item.querySelector('img');
+      lightboxImg.src = img.src;
+      lightboxImg.alt = img.alt;
+      lightbox.classList.add('active');
+    });
+  });
+
+  function closeLightbox() {
+    lightbox.classList.remove('active');
+    lightboxImg.src = '';
+  }
+
+  closeBtn.addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeLightbox(); // click outside image closes it
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeLightbox();
+  });
+</script>
 
 </body>
 
