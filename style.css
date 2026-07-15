@@ -278,19 +278,17 @@ section p {
 
 }
 
-section ptwo {
+section .ptwo {
 
     font-family: "EB Garamond", serif;
 
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     line-height: 1.8;
     font-weight: bold;
 
     color: #b59b81;
 
     text-align: center;
-    display: block;
-    margin: auto;
 
 }
 
