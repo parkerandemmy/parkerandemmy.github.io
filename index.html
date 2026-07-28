@@ -259,19 +259,7 @@ This is a Github pages hosted website that Emmy had a lot of fun building. We ho
 
 <h2>RSVP</h2>
 
-<p>
-
-We can't wait to celebrate with you!<br><br>
-
-Please check back soon for our online RSVP.
-
-</p>
-
-<a class="rsvp-button" href="#">
-
-Coming Soon
-
-</a>
+<div id="rsvp-widget"></div>
 
 </section>
 
@@ -301,6 +289,32 @@ Coming Soon
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') closeLightbox();
   });
+</script>
+
+
+<script>
+    (function (w, d, s, o, f, js, fjs) {
+        w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) };
+        js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
+        js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs);
+    }(window, document, 'script', 'oursvp', 'https://www.oursvp.app/widget/widget.js'));
+    oursvp('init', {
+        element: document.getElementById('rsvp-widget'),
+        eventId: 'gucKrksvUIrlbSDti2Gd',
+        showBackBtn: false,
+        language: 'english'
+    }); 
+    // rsvp styling
+    document.body.style.setProperty('--bg-color', '#FAF8F5');
+  document.body.style.setProperty('--text-color', '#b59b81');
+  document.body.style.setProperty('--heading-color', '#375744');
+  document.body.style.setProperty('--date-color', '#8B7355');
+  document.body.style.setProperty('--accent-color', '#8B7355');
+  document.body.style.setProperty('--button-bg-color', 'transparent');
+  document.body.style.setProperty('--button-text-color', '#2C2825');
+  document.body.style.setProperty('--border-color', '#fbf8f4');
+  document.body.style.setProperty('--button-shape', '0px');
+  document.body.style.setProperty('--text-align', 'center');
 </script>
 
 </body>
