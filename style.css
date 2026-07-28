@@ -559,12 +559,13 @@ a.same-color-link:hover {
 /* ---------- OurRSVP ---------- */
 
 #widget-oursvp #my-rsvp {
-  border: 1px solid #4A3B2B;
+  border: 1px solid #B59B81;
   box-shadow: none;
 }
 
 #my-rsvp .rsvp-title {
-  font-family: 'Cormorant Garamond', 'Garamond', Georgia, serif;
+  /*----- font-family: 'Cormorant Garamond', 'Garamond', Georgia, serif; ------*/
+font-family: "EB Garamond", serif
   font-weight: 300;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -573,19 +574,19 @@ a.same-color-link:hover {
 #my-rsvp .rsvp-font,
 #my-rsvp .rsvp-font label,
 #my-rsvp p {
-  font-family: 'Cormorant Garamond', 'Garamond', serif;
+  font-family: "EB Garamond", serif;
   font-weight: 400;
   letter-spacing: 0.02em;
 }
 
 #my-rsvp .rsvp-date {
-  font-family: 'Cormorant Garamond', 'Garamond', serif;
+  font-family: "EB Garamond", serif;
   font-style: italic;
   font-weight: 300;
 }
 
 #my-rsvp .rsvp-btn {
-  font-family: 'Cormorant Garamond', 'Garamond', serif;
+  font-family: "EB Garamond", serif;
   font-weight: 500;
   letter-spacing: 0.15em;
   text-transform: uppercase;
