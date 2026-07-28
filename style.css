@@ -517,3 +517,13 @@ section p {
     text-align: center;
 
 }
+
+a.same-color-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Optional: Add a hover effect so users still know it is clickable */
+a.same-color-link:hover {
+  text-decoration: underline;
+}
