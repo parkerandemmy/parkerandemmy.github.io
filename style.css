@@ -565,7 +565,7 @@ a.same-color-link:hover {
 
 #my-rsvp .rsvp-title {
   /*----- font-family: 'Cormorant Garamond', 'Garamond', Georgia, serif; ------*/
-font-family: "EB Garamond", serif
+font-family: "EB Garamond", serif;
   font-weight: 300;
   letter-spacing: 0.08em;
 }
@@ -595,9 +595,9 @@ font-family: "EB Garamond", serif
 }
 
 #my-rsvp .rsvp-btn:hover {
-  background-color: #375744;
-  color: #FAF8F5;
-  border-color: #375744;
+  background-color: #375744 !important;
+  color: #faf8f5 !important;
+  border-color: #375744 !important;
 }
 
 #my-rsvp .rsvp-form input:focus {
