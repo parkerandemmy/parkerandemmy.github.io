@@ -568,7 +568,6 @@ a.same-color-link:hover {
 font-family: "EB Garamond", serif
   font-weight: 300;
   letter-spacing: 0.08em;
-  text-transform: uppercase;
 }
 
 #my-rsvp .rsvp-font,
@@ -598,7 +597,7 @@ font-family: "EB Garamond", serif
 #my-rsvp .rsvp-btn:hover {
   background-color: #375744;
   color: #faf8f5;
-  border-color: #4A3B2B;
+  border-color: #375744;
 }
 
 #my-rsvp .rsvp-form input:focus {
