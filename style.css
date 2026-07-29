@@ -604,3 +604,27 @@ font-family: "EB Garamond", serif;
   outline: none;
   box-shadow: none;
 }
+
+/* ---------- Footer Flourish ---------- */
+
+.page-footer {
+
+    padding: 100px 0 80px;
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+.footer-flourish {
+
+    width: 100%;
+
+    max-width: 900px;
+
+    display: block;
+
+    opacity: .9;
+
+}
