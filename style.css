@@ -611,17 +611,19 @@ font-family: "EB Garamond", serif;
 
     padding: 100px 0 80px;
 
-    display: flex;
+    /* --- display: flex; --- */
 
-    justify-content: center;
+    /* --- justify-content: center; --- */
 
 }
 
 .footer-flourish {
 
-    width: 100%;
+   width: 100%;
 
-    max-width: 900px;
+   height: auto; 
+
+   /* --- max-width: 900px; --- */
 
     display: block;
 
